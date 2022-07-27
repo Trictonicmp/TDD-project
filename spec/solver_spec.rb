@@ -56,7 +56,7 @@ describe Solver do
       result2 = solver.fizzbuzz(input_value2)
 
       it 'returns "fizz" when entering 9 which is divisible by 3' do
-        expect(result).to eql('fizz')
+        expect(result2).to eql('fizz')
       end
     end
 
@@ -77,8 +77,6 @@ describe Solver do
     end
 
     describe 'fizzbuzz tests' do
-      solver = Solver.new
-
       input_value = 15
       result = solver.fizzbuzz(input_value)
 
