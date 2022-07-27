@@ -34,4 +34,57 @@ describe Solver do
     end
   end
 
+  describe 'fizzbuzz tests' do
+    solver = Solver.new
+
+    describe 'fizz tests' do
+      input_value = 3
+      result = solver.fizzbuzz(input_value)
+
+      it 'returns "fizz" when entering 3 which is divisible by 3' do
+        expect(result).to eql('fizz')
+      end
+
+      input_value2 = 9
+      result2 = solver.fizzbuzz(input_value2)
+
+      it 'returns "fizz" when entering 9 which is divisible by 3' do
+        expect(result).to eql('fizz')
+      end
+    end
+
+    describe 'buzz tests' do
+      input_value = 5
+      result = solver.fizzbuzz(input_value)
+
+      it 'returns "buzz" when entering 5 which is divisible by 5' do
+        expect(result).to eql('buzz')
+      end
+
+      input_value2 = 25
+      result2 = solver.fizzbuzz(input_value2)
+
+      it 'returns "buzz" when entering 25 which is divisible by 5' do
+        expect(result2).to eql('buzz')
+      end
+    end
+
+    describe 'fizzbuzz tests' do
+      solver = Solver.new
+
+      input_value = 15
+      result = solver.fizzbuzz(input_value)
+
+      it 'returns "fizzbuzz" when entering 15 which is divisible by 3 and divisible by 5' do
+        expect(result).to eql('fizzbuzz')
+      end
+
+      input_value2 = 30
+      result2 = solver.fizzbuzz(input_value2)
+
+      it 'returns "fizzbuzz" when entering 30 which is divisible by 3 and divisible by 5' do
+        expect(result2).to eql('fizzbuzz')
+      end
+    end
+  end
 end
