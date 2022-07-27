@@ -8,4 +8,12 @@ class Solver
     return 1 if number == 0
     return number * factorial_calculator(number - 1)
   end
+
+  def reverse(string)
+    string
+  end
+
+  def fizzbuzz(number)
+    return 0
+  end
 end
