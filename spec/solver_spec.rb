@@ -11,6 +11,13 @@ describe Solver do
       expect(factorial).to eql(720)
     end
 
+    input_number2 = 8
+    factorial2 = solver.factorial(input_number2)
+
+    it 'returns the factorial of 8 (40320)' do
+      expect(factorial2).to eql(40320)
+    end
+
     it 'raises an exeption when receiving a negative number (-1)' do
       expect(solver.factorial(-1)).to raise_error
     end
@@ -30,7 +37,7 @@ describe Solver do
     reversed2 = solver.reverse(input_str2)
 
     it 'returns "How Are You" reversed: "uoY erA woH"' do
-      expect(reversed2).to eql('How Are You')
+      expect(reversed2).to eql('uoY erA woH')
     end
   end
 
