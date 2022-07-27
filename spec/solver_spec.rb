@@ -15,4 +15,23 @@ describe Solver do
       expect(solver.factorial(-1)).to raise_error
     end
   end
+
+  describe 'reverse tests' do
+    solver = Solver.new
+
+    input_str = 'Hello'
+    reversed = solver.reverse(input_str)
+
+    it 'returns "Hello" reversed: "olleH"' do
+      expect(reversed).to eql('olleH')
+    end
+
+    input_str2 = 'How Are You'
+    reversed2 = solver.reverse(input_str2)
+
+    it 'returns "How Are You" reversed: "uoY erA woH"' do
+      expect(reversed2).to eql('How Are You')
+    end
+  end
+
 end
