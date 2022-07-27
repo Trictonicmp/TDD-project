@@ -19,7 +19,7 @@ describe Solver do
     end
 
     it 'raises an exeption when receiving a negative number (-1)' do
-      expect(solver.factorial(-1)).to raise_error
+      expect{solver.factorial(-1)}.to raise_error(ArgumentError)
     end
   end
 
@@ -91,5 +91,5 @@ describe Solver do
         expect(result2).to eql('fizzbuzz')
       end
     end
-  end
+  end 
 end
