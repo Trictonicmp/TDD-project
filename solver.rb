@@ -1,6 +1,6 @@
 class Solver
   def factorial(number)
-    raise Exception.new("Not a valid value") if number < 0
+    raise ArgumentError.new("Not a valid value") if number < 0
     return factorial_calculator(number)
   end
 
